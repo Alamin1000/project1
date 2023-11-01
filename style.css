@@ -107,14 +107,9 @@ p:last-child{
     max-width: 720px;
   }
 }
-@media (max-width: 1199px) and (min-width: 992px) {
+@media (max-width: 1299px) and (min-width: 992px) {
   .container {
     max-width: 960px;
-  }
-}
-@media (max-width: 1399px) and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
   }
 }
 @media (min-width: 1300px) {
@@ -132,12 +127,12 @@ p:last-child{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
-  background: var(--theme__color1);
-  color: #fff;
 }
 .a-header-in {
   padding: 30px 0;
+  z-index: 100;
+  background: var(--theme__color1);
+  color: #fff;
 }
 .a-header__inner {
   display: flex;
@@ -150,6 +145,13 @@ p:last-child{
 }
 .a-header-logo img {
 
+}
+.a-header-logo .mobile-img {
+  display: none;
+}
+
+.offmenu-open {
+  display: none;
 }
 
 .a-header-right {
@@ -186,14 +188,16 @@ p:last-child{
   transition: 0.3s;
 }
 .offcanvas-open:hover {
-  color: #97A3AE;
+  color: var(--theme__color1);
 }
 .offcanvas-close {
   color: var(--theme__color1);
   position: absolute;
   transition: 0.3s;
-  right: 25px;
-  top: 25px;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+  line-height: 1;
 }
 .offcanvas-close:hover {
   color: #97A3AE;
@@ -216,7 +220,7 @@ p:last-child{
   min-width: 200px;
   z-index: 5;
   position: relative;
-  background: #d5dce2;
+  background: #fff;
   height: 100%;
   padding: 50px 20px 40px;
   overflow: auto;
@@ -229,9 +233,9 @@ p:last-child{
 .offcanvas-menu ul li a {
   display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--theme__color1);
-  padding: 10px;
+  padding: 8px;
 }
 .dropdown-menu-custom ul {
   background: #fff;
@@ -320,6 +324,7 @@ p:last-child{
 .h-share ul li a {
   height: 32px;
   width: 32px;
+  padding: 1px 0 0;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -463,6 +468,50 @@ p:last-child{
 
 
 
+.case-filter-mobile {
+  display: none;
+  flex-wrap: wrap;
+}
+.case-filter-mobile__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 24px;
+}
+.case-filter-mobile__button {
+  position: relative;
+}
+.case-filter-mobile__button .a {
+  padding: 12px 18px;
+  gap: 8px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 121.429% */
+}
+.case-filter-mobile__button .a i {
+
+}
+
+.case-mobile-activated-toggler {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 121.429% */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.case-mobile-activated-toggler i {
+  font-size: 20px;
+}
+
+
 
 .case__group {
   margin-bottom: 30px;
@@ -489,7 +538,6 @@ p:last-child{
 }
 .product-slide_product {
   border-radius: 12px;
-  gap: 24px;
   display: flex;
   background: #171E1D;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
@@ -499,12 +547,17 @@ p:last-child{
 	width: 40.8%;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
+  align-self: stretch;
 }
 .product-slide_product__image .img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
   border-radius: inherit;
 }
 .product-slide_product__content {
-
+	padding: 30px 24px;
 }
 .product-slide_product__content .prd-tag {
   margin-bottom: 11px;
@@ -651,6 +704,40 @@ p:last-child{
 }
 .pagination ul li a:hover {
 
+}
+
+.pagination .in-select__out {
+  display: none;
+  position: relative;
+}
+.pagination .in-select__out::after {
+  content: '';
+  height: 8px;
+  width: 8px;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  transform: rotate(-45deg);
+}
+.pagination .in-select {
+  font-size: 14px;
+  padding: 11px 18px;
+  padding-right: 25px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.429%; /*  */
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  appearance: none;
+}
+.pagination .in-select option {
+  background: #fff;
+  color: #000;
 }
 /* ---pagination---end */
 

@@ -12,7 +12,6 @@
       href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/nice-select.css" />
     <link rel="stylesheet" href="css/default-edit.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
@@ -24,29 +23,19 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+
+          <ul class="mobile-menu">
+            <li><a class="off-close" href="#">Brands</a></li>
+            <li><a class="off-close" href="#">About</a></li>
+            <li><a class="off-close" href="#">Membership</a></li>
+            <li><a class="off-close" href="#">Courses</a></li>
+            <li><a class="off-close" href="#">News</a></li>
+            <li><a class="off-close" href="#">Podcasts</a></li>
+            <li><a class="off-close" href="#">Partner</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -57,7 +46,12 @@
           <div class="container">
             <div class="a-header__inner">
               <a href="index.html" class="a-header-logo">
-                <img src="images/home/the-alliance-logo.svg" alt="" />
+                <img
+                  class="desktop-img"
+                  src="images/home/the-alliance-logo.svg"
+                  alt=""
+                />
+                <img class="mobile-img" src="images/home/pma-logo.png" alt="" />
               </a>
               <div class="a-header-right">
                 <div class="a-main-menu">
@@ -72,6 +66,9 @@
                   </ul>
                 </div>
               </div>
+              <a href="#" class="offmenu-open">
+                <img src="images/home/hamburger.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -176,6 +173,23 @@
                 <div class="case__group__title">
                   <h4>All podcasts</h4>
                 </div>
+                <!-- case-filter-mobile -->
+                <div class="case-filter-mobile">
+                  <div class="case-filter-mobile__title">
+                    <div class="case-filter-mobile__button">
+                      <a class="a" href="#">
+                        <span class="txt">Filter (16) </span>
+                        <i class="far fa-chevron-down"></i>
+                      </a>
+                    </div>
+
+                    <a href="#" class="case-mobile-activated-toggler">
+                      <i class="fal fa-plus"></i>
+                      <span class="txt">Show filters</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- case-filter-mobile-end -->
                 <div class="case__group__body">
                   <div class="product__case">
                     <!-- column -->
@@ -602,6 +616,16 @@
                   <i class="far fa-arrow-left"></i>
                   <span class="txt">Prev</span>
                 </a>
+                <div class="in-select__out">
+                  <select class="in-select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>10</option>
+                  </select>
+                </div>
                 <ul>
                   <li><a class="active" href="#">1</a></li>
                   <li><a href="#">2</a></li>

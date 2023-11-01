@@ -24,29 +24,19 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+
+          <ul class="mobile-menu">
+            <li><a class="off-close" href="#">Brands</a></li>
+            <li><a class="off-close" href="#">About</a></li>
+            <li><a class="off-close" href="#">Membership</a></li>
+            <li><a class="off-close" href="#">Courses</a></li>
+            <li><a class="off-close" href="#">News</a></li>
+            <li><a class="off-close" href="#">Podcasts</a></li>
+            <li><a class="off-close" href="#">Partner</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -57,7 +47,12 @@
           <div class="container">
             <div class="a-header__inner">
               <a href="index.html" class="a-header-logo">
-                <img src="images/home/the-alliance-logo.svg" alt="" />
+                <img
+                  class="desktop-img"
+                  src="images/home/the-alliance-logo.svg"
+                  alt=""
+                />
+                <img class="mobile-img" src="images/home/pma-logo.png" alt="" />
               </a>
               <div class="a-header-right">
                 <div class="a-main-menu">
@@ -72,6 +67,9 @@
                   </ul>
                 </div>
               </div>
+              <a href="#" class="offmenu-open">
+                <img src="images/home/hamburger.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -516,6 +514,441 @@
                 <div class="case__group__title">
                   <h4>All podcasts</h4>
                 </div>
+                <!-- case-filter-mobile -->
+                <div class="case-filter-mobile">
+                  <div class="case-filter-mobile__title">
+                    <div class="case-filter-mobile__button">
+                      <a class="a" href="#">
+                        <span class="txt">Filter (16) </span>
+                        <i class="far fa-chevron-down"></i>
+                      </a>
+                      <div class="case-filter__panel">
+                        <a href="#" class="case-panel__clear-all">
+                          <i class="fal fa-times"></i>
+                          <span class="txt">Clear all</span>
+                        </a>
+
+                        <div class="case-filter__panel__in">
+                          <div class="case-filter-option-group__out">
+                            <h4>Communities</h4>
+                            <div class="case-filter-options__wrap">
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">All communities</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Product Marketing Alliance</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Sales Enablement Collective</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Product-led Alliance</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Future of SaaS</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">AI Accelerate Institute</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Customer Success Collective</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Revenue Marketing Alliance</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">CMO Alliance</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Developer Marketing Alliance</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Community-Led Alliance</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">GTM Alliance</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Finance Alliance</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Strategy Alliance</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Customer Marketing Alliance</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Competitive Intelligence Alliance</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Revenue Operations Alliance</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                            </div>
+                          </div>
+
+                          <div class="case-filter-option-group__out">
+                            <h4>Topics</h4>
+                            <div class="case-filter-options__wrap">
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">All topics</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Awards</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Courses</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                  checked
+                                />
+                                <span class="txt">Careers</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Metrics & OKRs</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Leadership</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Sales enablement</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt"
+                                  >Competitive intelligence</span
+                                >
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                  checked
+                                />
+                                <span class="txt">SAAS Products</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                  checked
+                                />
+                                <span class="txt">Win/Loss</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Messaging & Positioning</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">PMM Talks</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Go-to-market</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                              <!-- single-filter-option -->
+                              <label class="case-filter-label">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox checkbox-model"
+                                />
+                                <span class="txt">Leadership</span>
+                              </label>
+                              <!-- single-filter-option-end -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#" class="case-mobile-activated-toggler">
+                      <i class="fal fa-plus"></i>
+                      <span class="txt">Show filters</span>
+                    </a>
+                  </div>
+                  <div class="case__filter__active-options">
+                    <div class="filter-active-option">
+                      <span class="txt">Careers</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">SAAS Products</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Win/Loss</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Careers</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">SAAS Products</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Win/Loss</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Careers</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">SAAS Products</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Win/Loss</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Careers</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">SAAS Products</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Win/Loss</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Careers</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">SAAS Products</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Win/Loss</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                    <div class="filter-active-option">
+                      <span class="txt">Careers</span>
+                      <a href="#" class="close-o"
+                        ><i class="fal fa-times"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- case-filter-mobile-end -->
                 <div class="case__group__body">
                   <div class="product__case">
                     <!-- column -->
