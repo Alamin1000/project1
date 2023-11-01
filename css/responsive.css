@@ -33,6 +33,53 @@
     .case-filter__panel {
         width: calc(33% - 6px);
     }
+
+
+    .b-main-menu ul {
+        gap: 26px;
+    }
+    .b-main-menu ul li a {
+        font-size: 14px;
+    }
+    .b-header-right {
+        gap: 15px;
+    }
+    .b-hi-menu {
+        gap: 10px;
+    }
+    .b-main-menu {
+        margin-right: 10px;
+    }
+
+    .podcast-b__m-content {
+        padding: 0 0 0 50px;
+    }
+    .podcast-b__m-content h3 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .podcast-b__m-content h2 {
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    .podcast-b__m-content h4 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    .podcast-b__m-image {
+        width: 310px;
+    }
+
+    .recent-option__content h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .recent-option__img {
+        width: 100px;
+    }
+    .ria-m__s-side {
+        width: 35%;
+    }
 }
 
 
@@ -116,6 +163,72 @@
 
     .case-filter__panel {
         width: calc(50% - 8px);
+    }
+
+
+    .b-hi-menu {
+        justify-content: center;
+        gap: 0px;
+    }
+    .b-hi-menu li a {
+        
+    }
+    .b-header-right {
+        display: none;
+    }
+    .off-bottom-button {
+        margin-top: 14px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .podcast-b__m-row {
+        flex-wrap: wrap;
+    }
+
+    .podcast-b__m-image {
+        width: 100%;
+        max-width: 400px;
+    }
+    .podcast-b__m-content {
+        padding: 24px 0 0 0px;
+    }
+
+    .ria-m-row {
+        flex-wrap: wrap;
+        gap: 56px;
+    }
+    .ria-m__s-side {
+        width: 100%;
+        order: -1;
+    }
+    .ria-m__m-side {
+        width: 100%;
+    }
+
+    .resources__card__row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+
+    .b-footer-top__top {
+        gap: 32px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b-foot__tt-cta {
+        width: 100%;
+    }
+    .b-foot__tt-cta .input {
+        width: 200px;
+        flex-grow: 1;
+    }
+    .b-foot-tb-menu-row {
+        flex-wrap: wrap;
+    }
+    .b-foot-tb-menu {
+        margin-bottom: 30px;
+        width: 25%;
     }
 }
 
@@ -201,17 +314,117 @@
         overflow: auto;
     }
 
+    
+    .b-header-in {
+        padding: 20px 0;
+    }
+
+    .podcast-b-section {
+        padding: 56px 0;;
+    }
+    
+    .ria-m__about__auth .image {
+        border-radius: 12px;
+    }
+    .ria-m__about__auth {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .resources__card__row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .resources-section {
+        padding: 56px 0 56px;
+    }
+    .resources-sec__title {
+        margin-bottom: 24px;
+    }
+
+    .apply-section {
+        padding: 56px 0;
+    }
+
+    .b-foot-tt-title .t-shape {
+        width: 75px;
+        top: -44px;
+        left: -22px;
+    }
+    .b-footer-top__top {
+        padding: 80px 0 24px;
+    }
+    .b-foot__tt-cta {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .b-foot__tt-cta .input {
+        width: 100%;
+    }
+    .b-foot-tb-menu {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .b-foot-tb-menu__main__inner ul {
+        gap: 20px;
+    }
+    .b-foot-tb-menu__title h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .b-footer-top__bottom {
+        padding: 28px 0;
+    }
+    .b-foot-bt--h-share {
+        margin-top: 0;
+    }
+    .b-foot-bt--h-share .h-share-ul {
+        flex-wrap: wrap;
+        max-width: 190px;
+    }
+    .b-footer-bottom__top {
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 0 0 24px;
+    }
+    .b-footer-bottom__bottom {
+        padding: 24px 0 50px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
 }
 
 
 @media (max-width: 575px) {
- .container {
-    padding: 0 32px;
- }
+    .container {
+        padding: 0 32px;
+    }
+
+    .recent-option__img {
+        margin-top: 8px;
+        width: 60px;
+        height: 60px;
+    }
+    .recent-option {
+        gap: 16px;
+        align-items: flex-start;
+        position: relative;
+        padding-bottom: 56px;
+    }
+    .recent-option__content .hb {
+        padding: 16px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .recent-option__content h3 {
+        margin-bottom: 0;
+    }
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 370px) {
     .container {
         padding: 0 15px;
     }
@@ -219,5 +432,9 @@
     .case-filter__panel {
         padding: 24px 12px;
         width: 291px;
+    }
+
+    .podcast-b-section {
+        padding: 40px 0 50px;
     }
 }
