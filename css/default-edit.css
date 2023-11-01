@@ -3,7 +3,8 @@
     padding: 5px 17px;
     min-height: 41px;
     border-radius: 5px;
-    display: flex;
+    gap: 8px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -26,6 +27,14 @@
     border-color: #fff;
     color: #fff;
     background: transparent;
+}
+.default-button--dark {
+    background: #09100F;
+    color: #fff;
+}
+.default-button--pink {
+    background: #ED3D69;
+    color: #fff;
 }
 /* ---buttons---end */
 
