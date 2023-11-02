@@ -19,13 +19,18 @@
 }
 .default-button:hover {
     color: #fff;
-    background: var(--theme__color2);
+    background: var(--theme__color4);
     border-color: transparent;
 }
 
 .default-button--bordered {
     border-color: #fff;
     color: #fff;
+    background: transparent;
+}
+.default-button--bordered-pink{
+    border-color: var(--theme__color4);
+    color: var(--theme__color4);
     background: transparent;
 }
 .default-button--dark {

@@ -230,6 +230,58 @@
         margin-bottom: 30px;
         width: 25%;
     }
+
+
+    .pod-view-row {
+        flex-wrap: wrap;
+    }
+    .pod-view__side-column--nav-side {
+        display: none;
+    }
+    .pod-view__main-column {
+        width: 100%;
+    }
+
+    .pod-title__content .h1 {
+        font-size: 50px;
+        margin-bottom: 16px;
+    }
+    .pod-view__side-column--abt-side {
+        width: 100%;
+        order: -1;
+        margin-bottom: 56px;
+    }
+    .pod-view__writer h3 {
+        text-align: left;
+    }
+    .h-shapre--pod-writer {
+        align-items: flex-start;
+    }
+
+
+    .guest-modal-row {
+        flex-wrap: wrap;
+        gap: 34px;
+        padding: 50px 0;
+    }
+    .guest-modal .container {
+        max-width: 372px;
+    }
+    .guest-modal-row .image__side h2 .lt-sm {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .guest-modal-row .image__side h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .guest-modal-row .image__side {
+        width: 100%;
+    }
+    .modal-close {
+        top: 15px;
+        right: 17px;
+    }
 }
 
 
@@ -345,6 +397,9 @@
         padding: 56px 0;
     }
 
+    .b-footer {
+        background: url('../images/collection/b-footer-mobile-bg.png') no-repeat bottom right/100% 100%, #09100F;
+    }
     .b-foot-tt-title .t-shape {
         width: 75px;
         top: -44px;
@@ -361,15 +416,35 @@
         width: 100%;
     }
     .b-foot-tb-menu {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
         width: 100%;
     }
     .b-foot-tb-menu__main__inner ul {
-        gap: 20px;
+        gap: 10px;
+        padding-top: 10px;
     }
     .b-foot-tb-menu__title h4 {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 134px;
+        justify-content: space-between;
+    }
+    .b-foot-tb-menu__title h4::after {
+        content: '';
+        height: 21px;
+        width: 23px;
+        background: url('../images/collection/footer-arrow.svg') no-repeat center center/contain;
+        display: inline-block;
+    }
+    .b-foot-tb-menu__main {
+        display: none;
+    }
+    .b-foot-tb-menu.active .b-foot-tb-menu__main {
+        display: block;
     }
     .b-footer-top__bottom {
         padding: 28px 0;
@@ -392,6 +467,19 @@
         gap: 24px;
     }
 
+
+    .pod-title {
+        padding: 56px 0 24px;
+    }
+    .pod-title__content .h1 {
+        font-size: 40px;
+    }
+    .pod__mc__recent .title .button {
+        display: none;
+    }
+    .recent-more-bottom {
+        display: flex;
+    }
 }
 
 
@@ -436,5 +524,12 @@
 
     .podcast-b-section {
         padding: 40px 0 50px;
+    }
+
+    .pod__mc__podcast h3 {
+        font-size: 22.4px;
+    }
+    .pod__mc-tab__wrapper {
+        padding: 25px 15px;
     }
 }
