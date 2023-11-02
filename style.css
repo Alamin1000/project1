@@ -1147,6 +1147,10 @@ p:last-child{
 }
 .recent-option__content .hb .play {
   font-size: 25px;
+  transition: 0.3s;
+}
+.recent-option__content .hb .play:hover {
+  color: var(--theme__color4);
 }
 .recent-more-bottom {
   margin-top: 24px;
@@ -1265,6 +1269,8 @@ p:last-child{
   height: 150.15px;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  display: block;
+  overflow: hidden;
 }
 .resource__card .image .img {
   height: 100%;
@@ -1272,6 +1278,10 @@ p:last-child{
   object-fit: cover;
   object-position: center;
   border-radius: inherit;
+  transition: 0.3s;
+}
+.resource__card:hover .image .img {
+  transform: scale(1.1);
 }
 .resource__card .content {
   padding: 24px 16px;
@@ -1291,6 +1301,13 @@ p:last-child{
   font-weight: 500;
   line-height: 120%; /*  */
   letter-spacing: 0.15px;
+  transition: 0.3s;
+}
+.resource__card .content h3 a {
+  display: block;
+}
+.resource__card .content h3:hover a {
+  color: var(--theme__color1);
 }
 .resource__card .content p {
   font-size: 16px;
@@ -1356,6 +1373,9 @@ p:last-child{
 }
 .apply__content .button {
 
+}
+.apply__content .button:hover {
+  background: var(--theme__color1);
 }
 /* ---apply-section-end */
 

@@ -41,6 +41,9 @@
     background: #ED3D69;
     color: #fff;
 }
+.default-button--pink:hover {
+    background: var(--theme__color1);
+}
 /* ---buttons---end */
 
 /* -checkbox-model- */
