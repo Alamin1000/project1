@@ -431,6 +431,7 @@ p:last-child{
   width: calc(25% - 12px);
   background: #0A100F;
   border-right: 1px solid #fff;
+  min-height: calc(var(--height-data) + 130px);
 }
 .case-panel__clear-all {
   font-size: 16px;
