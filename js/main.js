@@ -73,7 +73,15 @@
 }
 
 //filter-dropdown-height
-{
+window.addEventListener("resize", function () {
+  filterHeightAdjust();
+});
+window.addEventListener("DOMContentLoaded", function () {
+  this.setTimeout(function () {
+    filterHeightAdjust();
+  }, 10);
+});
+function filterHeightAdjust() {
   let productCase = document.querySelector(".product__case");
   let filterPanelDesktop = document.querySelector(
     "#case-filter__panel__desktop"
